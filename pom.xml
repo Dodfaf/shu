@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xdf</groupId>
+  <artifactId>shutao</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>shutao Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>smartupload</groupId>
+      <artifactId>smartupload</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jsmartcom_zh_CN.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.2.0</version>
+      <scope>system</scope>
+      <systemPath>D:/software/apache-maven-3.9.5/mvn_resp/mysql/mysql-connector-java/8.2.0/mysql-connector-j-8.2.0.jar</systemPath>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.5</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.9</version>
+    </dependency>
+
+
+<!--  加盐哈希引入BCrypt库  -->
+    <dependency>
+      <groupId>org.mindrot</groupId>
+      <artifactId>jbcrypt</artifactId>
+      <version>0.4</version>
+    </dependency>
+
+<!--&lt;!&ndash;    JSTL表达式&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>jstl</groupId>-->
+<!--      <artifactId>jstl</artifactId>-->
+<!--      <version>1.2</version>-->
+<!--    </dependency>-->
+
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>2.0.0</version> <!-- 使用 Jakarta EE 兼容的版本 -->
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+      <version>2.0.0</version> <!-- 使用 Jakarta EE 兼容的版本 -->
+    </dependency>
+
+
+
+    <!--&lt;!&ndash;    &lt;!&ndash;standard标签库&ndash;&gt;&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>taglibs</groupId>-->
+<!--      <artifactId>standard</artifactId>-->
+<!--      <version>1.1.2</version>-->
+<!--    </dependency>-->
+
+
+  </dependencies>
+  <build>
+    <finalName>shutao</finalName>
+  </build>
+</project>
